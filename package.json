@@ -1,22 +1,21 @@
 {
   "name": "tictactoe",
   "version": "1.0.0",
-  "description": "Tic Tac Toe Telegram Bot",
-  "main": "bot.js",
+  "description": "Tic Tac Toe static game server",
+  "main": "index.html",
   "scripts": {
-    "start": "node bot.js",
+    "start": "http-server ./ -p $PORT",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "tictactoe",
     "game",
-    "telegram",
-    "bot",
     "javascript"
   ],
   "author": "Your Name",
   "license": "ISC",
-  "dependencies": {
-    "telegraf": "^4.16.3"
+  "type": "commonjs",
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
